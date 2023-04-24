@@ -35,6 +35,7 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
+        Time.timeScale = 0f;
         _audioSource = GetComponent<AudioSource>();
         score = 0;
         _scoreText.SetText(score.ToString());
